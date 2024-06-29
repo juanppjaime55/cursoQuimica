@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Química Orgánica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h1 {
+            color: #d32f2f;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        #video {
+            width: 80%;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            margin-top: 20px;
+        }
+        
+        #quiz {
+            display: none; /* Ocultar inicialmente */
+        }
+        
+        #button-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        #button {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        #button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <h1>Curso de Química Orgánica</h1>
+    <div id="video">
+        {% block content %}{% endblock %}
+    </div>
+    <iframe id="quiz" src=""></iframe>
+    <div id="button-container">
+        <button id="button">Siguiente</button>
+    </div>
+    {% block script %}{% endblock %}
+</body>
+</html>

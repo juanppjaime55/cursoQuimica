@@ -1,0 +1,17 @@
+{% extends "plantilla.html" %}
+
+{% block content %}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z7d6vWJq8-o?si=h8UmwLmePINl7MKl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+{%endblock%}
+
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('button').addEventListener('click', function() {
+            window.open("https://www.youtube.com/watch?v=HcljwxUXVQM")
+        });
+    });
+</script>
+{% endblock %}

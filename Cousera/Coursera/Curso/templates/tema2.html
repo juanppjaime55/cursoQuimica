@@ -1,0 +1,17 @@
+{% extends "plantilla.html" %}
+
+{% block content %}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WnVFcnGvJ-Y?si=nzzHQTGeQE3Icw3G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+{%endblock%}
+
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('button').addEventListener('click', function() {
+            window.open("https://www.educaplay.com/learning-resources/3021228-enlaces_y_ejercicios.html")
+        });
+    });
+</script>
+{% endblock %}

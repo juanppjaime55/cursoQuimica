@@ -1,0 +1,17 @@
+{% extends "plantilla.html" %}
+
+{% block content %}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fMllRfO7eII?si=fJ9jSOdZFaM5CA4i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+{%endblock%}
+
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('button').addEventListener('click', function() {
+            window.open("https://www.educaplay.com/learning-resources/7243235-isomeria_quimica_organica.html")
+        });
+    });
+</script>
+{% endblock %}

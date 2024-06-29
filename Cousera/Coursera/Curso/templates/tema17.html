@@ -1,0 +1,17 @@
+{% extends "plantilla.html" %}
+
+{% block content %}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lzoCpnaQ5xI?si=--S7508gocgU6z8_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+{%endblock%}
+
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('button').addEventListener('click', function() {
+            window.open("https://es.educaplay.com/recursos-educativos/5337702-puente_de_hidrogeno.html")
+        });
+    });
+</script>
+{% endblock %}

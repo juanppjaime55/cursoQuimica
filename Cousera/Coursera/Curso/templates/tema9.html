@@ -1,0 +1,21 @@
+{% extends "plantilla.html" %}
+
+{% block content %}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y1HzrXi2JNY?si=IUJChD0hZb9ulCZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+{%endblock%}
+
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('button').addEventListener('click', function() {
+            var iframe = document.getElementById('quiz');
+            var quizUrl = "https://wordwall.net/embed/025387ad31754c9791250b7340547381?themeId=21&templateId=69&fontStackId=0";
+            iframe.src = quizUrl;
+            iframe.style.display = "block"; // Mostrar el iframe
+            document.getElementById('button-container').style.display = "none"; // Ocultar el contenedor del botón
+        });
+    });
+</script>
+{% endblock %}
